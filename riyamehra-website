@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riya Mehra</title>
+    <style>
+        /* Reset */
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        body {font-family: 'Arial', sans-serif; line-height: 1.6; color: #333;}
+        a {text-decoration: none; color: inherit;}
+        
+        /* Header */
+        header {
+            background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        header h1 {font-size: 3rem; margin-bottom: 10px;}
+        header p {font-size: 1.5rem;}
+        header .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff4c60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        /* Sections */
+        section {padding: 80px 20px; max-width: 1000px; margin: 0 auto;}
+        section h2 {text-align: center; margin-bottom: 40px; font-size: 2.5rem; color: #ff4c60;}
+
+        /* About */
+        #about p {font-size: 1.2rem; max-width: 800px; margin: 0 auto; text-align: center;}
+
+        /* Contact */
+        #contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        #contact input, #contact textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        #contact button {
+            padding: 10px;
+            background: #ff4c60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #222;
+            color: #fff;
+        }
+
+        /* Responsive */
+        @media(max-width:768px){
+            header h1 {font-size:2.5rem;}
+            header p {font-size:1.2rem;}
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Riya Mehra</h1>
+        <p>Web Designer & Developer</p>
+        <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact Me</button>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! I am Riya Mehra, a passionate Web Designer & Developer with experience in creating modern and responsive websites. I specialize in HTML, CSS, and JavaScript to bring ideas to life on the web.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p style="text-align:center; margin-top:20px;">
+            Email: example@domain.com | Phone: +91 98765 43210
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Riya Mehra. All Rights Reserved.
+    </footer>
+</body>
+</html>
